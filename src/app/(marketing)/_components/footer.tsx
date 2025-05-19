@@ -8,7 +8,7 @@ export const Footer = () => {
         <Button size="lg" variant="ghost">
           <Image
             src="/nodejs.svg"
-            alt="Croatian"
+            alt="Node"
             height={32}
             width={40}
             className="mr-4 rounded-md"
@@ -18,7 +18,7 @@ export const Footer = () => {
         <Button size="lg" variant="ghost">
           <Image
             src="/rust.svg"
-            alt="Spanish"
+            alt="Rust"
             height={32}
             width={40}
             className="mr-4 rounded-md"
@@ -28,7 +28,7 @@ export const Footer = () => {
         <Button size="lg" variant="ghost">
           <Image
             src="/python.svg"
-            alt="French"
+            alt="Python"
             height={32}
             width={40}
             className="mr-4 rounded-md"
@@ -37,23 +37,23 @@ export const Footer = () => {
         </Button>
         <Button size="lg" variant="ghost">
           <Image
-            src="/nodejs.svg"
-            alt="Italian"
+            src="/typescript.svg"
+            alt="Typescript"
             height={32}
             width={40}
             className="mr-4 rounded-md"
           />
-          Node
+          Typescript
         </Button>
         <Button size="lg" variant="ghost">
           <Image
-            src="/rust.svg"
-            alt="Japanese"
+            src="/java.svg"
+            alt="Java"
             height={32}
             width={40}
             className="mr-4 rounded-md"
           />
-          Rust
+          Java
         </Button>
       </div>
     </footer>
