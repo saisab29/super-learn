@@ -24,7 +24,9 @@ export const List = ({ courses, activeCourseId }: Props) => {
     }
 
     startTransition(() => {
-      upsertUserProgress(id).catch(() => toast.error("Couldn't select course"));
+      upsertUserProgress(id).catch((error) =>
+        toast.error(`Couldn't select course: ${error}`)
+      );
     });
   };
   return (
