@@ -164,6 +164,30 @@ const main = async () => {
         audioSrc: "/es_man.mp3",
       },
     ]);
+
+    await db.insert(schema.challenges).values([
+      {
+        id: 4,
+        lessonId: 2,
+        type: "SELECT",
+        order: 1,
+        question: 'Which one of these is the "double" type?',
+      },
+      {
+        id: 5,
+        lessonId: 2,
+        type: "ASSIST",
+        order: 2,
+        question: "double type",
+      },
+      {
+        id: 6,
+        lessonId: 2,
+        type: "SELECT",
+        order: 3,
+        question: "Which one of these is the 'integer' type?",
+      },
+    ]);
   } catch (error) {
     console.error(error);
     throw new Error("Failed to seed the database");

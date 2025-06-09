@@ -120,6 +120,10 @@ export const Quiz = ({
   const challenge = challenges[activeIndex];
   const options = challenge?.challengeOptions ?? [];
 
+  if (!challenge) {
+    return <div>Challenge Finsished!</div>;
+  }
+
   const title =
     challenge.type === "ASSIST"
       ? "Select the correct answer"
