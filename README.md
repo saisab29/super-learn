@@ -1,9 +1,4 @@
-<div align="center">
-    <a href="https://superlearn.vercel.app">
-        <img width="600" src="./public/gh-cover.svg" alt="SuperLearn brand banner" title="SuperLearn - a programming learning app" />
-    </a>
-
-## SuperLearn: Learn Programming Languages Interactively
+## SuperLearn
 
 </div>
 
