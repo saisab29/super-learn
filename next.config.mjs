@@ -44,6 +44,20 @@ const nextConfig = {
       fullUrl: true,
     },
   },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        destination: '/not-found',
+        permanent: false,
+        missing: [
+          {
+            type: 'page',
+          },
+        ],
+      },
+    ]
+  },
 }
 
 export default nextConfig
