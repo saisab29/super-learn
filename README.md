@@ -1,4 +1,7 @@
-## SuperLearn: Learn Programming Languages Interactively
+
+<img width="1897" height="868" alt="image" src="https://github.com/user-attachments/assets/b57d3345-10b8-46aa-83c3-3ebf0dd27a34" />
+
+## SuperLearn
 
 </div>
 
