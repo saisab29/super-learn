@@ -1,0 +1,100 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import './clerk.css';
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 18% 98%;
+    --foreground: 230 15% 14%;
+    --card: 0 0% 98%;
+    --card-foreground: 230 15% 14%;
+    --popover: 0 0% 98%;
+    --popover-foreground: 230 15% 14%;
+    --primary: 235 90% 62%; /* Indigo/Blue */
+    --primary-foreground: 210 40% 98%;
+    --primary-depth: 235 78% 54%;
+    --primary-light: 235 90% 70%;
+    --primary-dark: 235 65% 36%;
+    --secondary: 195 95% 50%; /* Cyan */
+    --secondary-foreground: 210 40% 98%;
+    --secondary-depth: 195 80% 42%;
+    --muted: 230 14% 94%;
+    --muted-foreground: 230 10% 40%;
+    --accent: 150 7% 94%;
+    --accent-foreground: 230 15% 14%;
+    --highlight: 50 100% 75%; /* playful yellow */
+    --highlight-foreground: 210 40% 98%;
+    --highlight-depth: 48 95% 60%;
+    --super: 280 90% 65%; /* purple */
+    --super-foreground: 0 0% 98%;
+    --super-depth: 280 75% 55%;
+    --destructive: 0 70% 58%;
+    --destructive-foreground: 0 0% 98%;
+    --destructive-depth: 0 60% 46%;
+    --disabled: 230 10% 90%;
+    --disabled-foreground: 230 8% 45%;
+    --loading: 230 10% 90%;
+    --border: 230 10% 90%;
+    --input: 230 10% 85%;
+    --ring: 235 90% 62%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 250 28% 9%; /* indigo */
+    --foreground: 0 0% 96%;
+    --card: 250 26% 11%;
+    --card-foreground: 0 0% 96%;
+    --popover: 250 26% 11%;
+    --popover-foreground: 0 0% 96%;
+    --primary: 235 90% 62%;
+    --primary-foreground: 0 0% 6%;
+    --secondary: 195 95% 50%;
+    --secondary-foreground: 0 0% 6%;
+    --muted: 250 20% 26%;
+    --muted-foreground: 0 0% 80%;
+    --accent: 260 35% 22%;
+    --accent-foreground: 0 0% 96%;
+    --super: 280 90% 65%;
+    --super-foreground: 0 0% 98%;
+    --super-depth: 280 75% 55%;
+    --destructive: 0 70% 58%;
+    --destructive-foreground: 0 0% 98%;
+    --disabled: 250 16% 14%;
+    --disabled-foreground: 0 0% 60%;
+    --loading: 250 16% 14%;
+    --border: 250 16% 14%;
+    --input: 250 16% 20%;
+    --ring: 235 90% 62%;
+  }
+}
+
+@layer base {
+  html,
+  body,
+  :root {
+    @apply h-full;
+  }
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .heading-section {
+    @apply px-8 py-6 text-center font-display text-3xl font-bold leading-normal tracking-tighter sm:text-4xl sm:leading-snug md:text-5xl;
+  }
+  .focus-visible {
+    @apply ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2;
+  }
+}
+
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}
