@@ -12,7 +12,7 @@ type CurrentButtonProps = {
 }
 
 export const CurrentButton = forwardRef<HTMLDivElement, CurrentButtonProps>(
-  ({ percentage = 0, ariaLabel, icon = 'star', variant = 'primary', ...props }, ref) => {
+  ({ percentage = 0, ariaLabel, icon = 'code', variant = 'primary', ...props }, ref) => {
     return (
       <div
         ref={ref}

@@ -61,7 +61,7 @@ export function LearnButton({
         />
       ) : (
         <LockedButton
-          icon={isLast ? 'last' : 'star'}
+          icon={isLast ? 'last' : 'code'}
           title={title}
           prompt="Complete all lessons above to unlock this!"
           ariaLabel="Locked Lesson"
