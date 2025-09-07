@@ -38,26 +38,11 @@ const nextConfig = {
   // ...other config
   experimental: {
     typedRoutes: true,
-    missingSuspenseWithCSRError: false,
   },
   logging: {
     fetches: {
       fullUrl: true,
     },
-  },
-  async redirects() {
-    return [
-      {
-        source: '/:path*',
-        destination: '/not-found',
-        permanent: false,
-        missing: [
-          {
-            type: 'page',
-          },
-        ],
-      },
-    ]
   },
 }
 
