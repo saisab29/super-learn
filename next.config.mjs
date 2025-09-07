@@ -38,6 +38,7 @@ const nextConfig = {
   // ...other config
   experimental: {
     typedRoutes: true,
+    missingSuspenseWithCSRError: false,
   },
   logging: {
     fetches: {
