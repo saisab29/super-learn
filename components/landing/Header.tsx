@@ -33,7 +33,9 @@ export function Header() {
           <span className="relative block aspect-square w-[1.5em]">
             <NextImage src="/logo.svg" alt="SuperLearn logo" fill className="object-contain" />
           </span>
-          <span className="font-display -tracking-widest max-sm:sr-only">SuperLearn</span>
+          <span className="font-display text-sm font-normal -tracking-widest max-sm:sr-only">
+            SuperLearn
+          </span>
         </NextLink>
         <div className="flex flex-1 items-center justify-end">
           <ClerkLoaded>

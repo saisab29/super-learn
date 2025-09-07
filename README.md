@@ -1,4 +1,4 @@
-## SuperLearn
+## SuperLearn: Learn Programming Languages Interactively
 
 </div>
 
@@ -9,9 +9,32 @@
   <a href="https://typescriptlang.org" title="More Typescript" target="_blank">
     <img alt="Typescript" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
   </a>
+  <a href="https://spring.io/projects/spring-boot" title="Spring Boot" target="_blank">
+    <img alt="Spring Boot" src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white" />
+  </a>
+  <a href="https://www.postgresql.org/" title="PostgreSQL" target="_blank">
+    <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
+  </a>
 </div>
 
 ---
+
+### Tech Stack
+
+#### Frontend
+
+- Next.js 14 with server actions
+- TypeScript
+- Authentication (Clerk)
+- Beautiful UI (Shadcn UI)
+- Database (DrizzleORM + PostgreSQL)
+
+#### Backend (Under Development)
+
+- Spring Boot 3
+- Java 17
+- RESTful APIs
+- PostgreSQL
 
 ### 🛠 Setup Guide
 
@@ -22,13 +45,21 @@
    cd super-learn
    ```
 
-2. **Install dependencies**
+2. **Frontend Setup**
 
    ```bash
+   cd frontend
    pnpm install
    ```
 
-3. **Environment Setup**
+3. **Backend Setup**
+
+   ```bash
+   cd api
+   ./mvnw clean install
+   ```
+
+4. **Environment Setup**
 
    - Copy `.env.example` to `.env`
    - Fill in required environment variables:
@@ -36,26 +67,44 @@
      - Database URL
      - Other API keys
 
-4. **Database Setup**
+5. **Database Setup**
 
    ```bash
    pnpm db:push
    pnpm db:seed
    ```
 
-5. **Start Development Server**
+6. **Start Development Servers**
+
+   Frontend:
+
    ```bash
+   cd frontend
    pnpm dev
    ```
 
-Visit `http://localhost:3000` to see the application running.
+   Backend:
+
+   ```bash
+   cd api
+   ./mvnw spring-boot:run
+   ```
+
+Frontend: Visit `http://localhost:3000`  
+Backend API: Available at `http://localhost:8080`
 
 ### 📝 Environment Variables
 
 ```env
+# Frontend
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
 DATABASE_URL=
+
+# Backend
+SPRING_DATASOURCE_URL=
+SPRING_DATASOURCE_USERNAME=
+SPRING_DATASOURCE_PASSWORD=
 ```
 
 ### 🤝 Contributing
@@ -64,4 +113,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ### 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT

@@ -17,7 +17,7 @@ export function Reasons() {
         <li>
           <ReasonsItem
             className="bg-primary/80 text-primary-dark hover:bg-primary/65 dark:hover:bg-primary"
-            reason="Built with Next.js, TypeScript, and Drizzle"
+            reason="Built with Next.js, TypeScript, and Java"
           >
             <Zap />
           </ReasonsItem>
